@@ -1,0 +1,194 @@
+@font-face {
+  font-family: fontRick;
+  src: url("/src/assets/get_schwifty.ttf");
+}
+
+*,
+*:after,
+*:before{
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+.Banner {
+  background-color: rgb(13, 13, 13);
+}
+
+#Banner {
+  width: 100%;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 50px;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  text-align: center;
+
+  background-color: rgb(13, 13, 13);
+  color: white;
+}
+
+.Title, .Subtitle {
+  font-size: 80px;
+  margin-top: 25px;
+  font-family: fontRick;
+  color: #00dcfc;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #dfef01, 0 0 10px #dfef01, 0 0 12px #dfef01, 0 0 15px #dfef01, 0 0 17px #dfef01;
+  }
+  
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 7px #f1fb6d, 0 0 10px #f1fb6d, 0 0 12px #f1fb6d, 0 0 15px #f1fb6d, 0 0 17px #f1fb6d, 0 0 20px #f1fb6d;
+  }
+}
+
+.Title span{
+  font-family: fontRick;
+  font-size: 24px;
+}
+
+.Subtitle {
+  font-family: fontRick;
+  font-size: 60px;
+  margin-top: -25px;
+}
+
+.Location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 8px solid rgb(48, 48, 48);
+  width: 100%;
+  max-width: 1050px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.Location span{
+  font-size: 14px;
+}
+
+.InfoLocation {
+  display: flex;
+  flex-direction: column;
+  left: 25px;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.Location h1{
+  color: #00dcfc;
+  font-size: 36px;
+}
+
+.Location p{
+  color:white;
+}
+
+.Location span{
+  color: #dfef01;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.InfoIndividual {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.Cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:30px;
+  max-width: 1050px;  
+}
+
+
+.Card {
+  display: flex;
+  gap: 8px;
+  width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: rgb(48, 48, 48);
+}
+
+.Card img{
+  width: 170px;
+  height: 170px;
+}
+
+.CardInfo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 4px;
+  text-align: left;
+}
+
+.CardInfo :first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.CardInfo .statusGreen::before {
+  content: "● ";
+  font-size: 24px;
+  color: green;
+}
+
+.CardInfo .statusRed::before {
+  content: "● ";
+  font-size: 22px;
+  color: red;
+}
+
+.CardInfo .statusGrey::before {
+  content: "● ";
+  font-size: 22px;
+  color: grey;
+}
+
+
+
+.CardInfo .small {
+  font-size: small;
+  margin-bottom: -10px;
+  color: grey;
+}
+
+.formRick {
+  width: 100%;
+  max-width: 1050px; 
+}
+
+.formRick input {
+  background: #443737;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  outline: 0;
+}
