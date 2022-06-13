@@ -9,7 +9,7 @@ const InputSearch = ({setSearchLocation}) => {
 
   return (
     <form onSubmit={onSubmitFunction} className='formRick'>
-        <input type="number" className='Input' placeholder='Input a location' min="0" max="126"/>
+        <input type="number" className='Input' placeholder='Input a location (1 - 126)' min="0" max="126"/>
         <button>Search</button>
     </form>
     
